@@ -38,7 +38,81 @@
   
   background-position: center;
   background-size: cover;
+  text-justify: inter-cluster;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 50px;
+}
+
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+  background-color: #e9e9ff !important; 
+  }
+
+.footer {
+  background-color: #859185;
+  margin: 0px auto;
+  padding: 20px 0px;
+  font-size: large;
+}
+
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: #9575cd;
+  color: floralwhite;
+}
+
+.list-unstyled li a{
+   text-decoration: none;
+   font-style: italic;
+
+}
+
+.btn{
+  z-index: 0;
+}
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+/* .ml-1 {
+  margin-left: ($spacer * .25) !important;
+}
+
+.px-2 {
+  padding-left: ($spacer * .5) !important;
+  padding-right: ($spacer * .5) !important;
+}
+
+.p-3 {
+  padding: $spacer !important;
+} */
+
+p{
+  font-size: medium;
+}
+
+.dropdown-class{
+  background-color: #2fda3d !important;
+  text-align: center;
+  font-size: large;
+}
+
+.course-class{
+  background-color: #cbfadf;
+}
+
+.dropdown-menu{
+  text-align: center;
+  font-size: large;
+}
+
+.navbarr{
+  padding: 0rem 0rem;
+}
+
+.body-div1{
+  background-color: #ffffff;
 }
