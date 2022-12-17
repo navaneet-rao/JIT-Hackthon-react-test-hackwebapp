@@ -8,6 +8,9 @@ function App() {
         Header here
       </header>
       <body className="container-fluid">Hello</body>
+      <footer>
+        footer
+      </footer>
     </div>
   );
 }
