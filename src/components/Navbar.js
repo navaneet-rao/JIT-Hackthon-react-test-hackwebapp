@@ -30,7 +30,7 @@ function Navbar() {
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             JIT
-            <i class="fab fa-typo3" />
+            <i className="fab fa-typo3" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -52,25 +52,19 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/products"
+                to="../../public/product.html"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Products
               </Link>
             </li>
-
-            <li>
-              <Link
-                to="/sign-up"
-                className="nav-links-mobile text-light"
-                onClick={closeMobileMenu}
-              >
-                Sign Up
-              </Link>
-            </li>
           </ul>
-          {button && <Button className="text-light" buttonStyle="btn--outline">SIGN UP</Button>}
+          {button && (
+            <Button className="text-light" buttonStyle=" md -3 btn--outline">
+              SIGN UP
+            </Button>
+          )}
         </div>
       </nav>
     </>

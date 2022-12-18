@@ -2,15 +2,12 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import Home from "./components/pages/Home";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Products from "./components/pages/Products";
 import SignUp from "./components/pages/SignUp";
 import Aboutus from "./components/pages/Aboutus";
+import 'bootstrap/dist/css/bootstrap.css'
+
 
 function App() {
   return (
@@ -46,7 +43,7 @@ function App() {
           <div className="container">
             <div className="row row-header">
               <div className="col-12 col-sm-6">
-                <h3>Our Vision</h3>
+                <h3 className="h3">Our Vision</h3>
                 <p>
                   Our Vision To be an Institution of Excellence in Engineering
                   education, Innovation and Research and work towards evolving
@@ -55,7 +52,7 @@ function App() {
                 </p>
               </div>
               <div className="col-12 col-sm-6">
-                <h3>Our Mission</h3>
+                <h3 className="font-weight-bold">Our Mission</h3>
                 <p>
                   Our Mission The Institution aims at providing a vibrant,
                   intellectually and emotionally rich teaching learning
@@ -69,7 +66,7 @@ function App() {
           </div>
           <div className="container course-class text-center">
             <div className="mt-4">
-              <h2>Accreditation Status</h2>
+              <h2 className="font-weight-bold">Accreditation Status</h2>
               <p>
                 Following programmes are accredited by NBA till 2025 Computer
                 Science & Engineering Information Science & Engineering
@@ -78,7 +75,7 @@ function App() {
             </div>
 
             <div className="mt-4">
-              <h2>Courses Offered</h2>
+              <h2 className="h2">Courses Offered</h2>
               <div class="row row-header">
                 <div className="col-12 col-sm-4">
                   <h3>Under Graduate :</h3>
@@ -247,7 +244,7 @@ function App() {
                   </div>
                 </div>
                 <div className="col-12 col-sm-4">
-                  <h3>Post Graduate :</h3>
+                  <h3 className="font-weight-bold">Post Graduate :</h3>
                   <div class="dropdown mt-4">
                     <button
                       class="btn btn-lg dropdown-class dropdown-toggle"
@@ -342,7 +339,7 @@ function App() {
                   </div>
                 </div>
                 <div className="col-12 col-sm-4">
-                  <h3>Research :</h3>
+                  <h3 className="font-weight-bold">Research :</h3>
                   <div class="dropdown mt-4">
                     <button
                       class="btn btn-lg dropdown-class dropdown-toggle"
@@ -568,13 +565,11 @@ function App() {
                   </a>
                 </li>
                 <li>
-                  <a className="text-light" href="#">
+                  <a
+                    className="text-light"
+                    href="./components/pages/Aboutus.js"
+                  >
                     About
-                  </a>
-                </li>
-                <li>
-                  <a className="text-light" href="#">
-                    Menu
                   </a>
                 </li>
                 <li>
@@ -651,6 +646,92 @@ function App() {
           </div>
         </div>
       </footer>
+      <div className="container">
+        <form className="form-bottom">
+          <div className="form-row">
+            <div className="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input
+                type="email"
+                className="form-control"
+                id="inputEmail4"
+                placeholder="Email"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="inputPassword4"
+                placeholder="Password"
+              />
+            </div>
+          </div>
+          <div className="form-group">
+            <label for="inputAddress">Address</label>
+            <input
+              type="text"
+              className="form-control"
+              id="inputAddress"
+              placeholder="1234 Main St"
+            />
+          </div>
+          <div className="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input
+              type="text"
+              className="form-control"
+              id="inputAddress2"
+              placeholder="Apartment, studio, or floor"
+            />
+          </div>
+          <div className="form-row">
+            <div className="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" className="form-control" id="inputCity" />
+            </div>
+            <div className="form-group col-md-4">
+              <label for="inputState">State</label>
+              <select id="inputState" className="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div className="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" className="form-control" id="inputZip" />
+            </div>
+          </div>
+          <div className="form-group">
+            <div className="form-check">
+              <input
+                className="form-check-input"
+                type="checkbox"
+                id="gridCheck"
+              />
+              <label className="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div>
+          <button
+            type="submit"
+            name="sign-in"
+            className="btn btn-lg btn-primary"
+          >
+            Sign in
+          </button>
+        </form>
+        <div>
+          <button
+            type="button"
+            className="btn btn-outline-dark pmd-btn-fab pmd-ripple-effect"
+          >
+            <i className="material-icons pmd-sm">Link</i>
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
